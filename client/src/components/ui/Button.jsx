@@ -1,14 +1,25 @@
 const Button = ({
   children,
-  type = "button",
-  onClick,
   className = "",
+  ...props
 }) => {
   return (
     <button
-      type={type}
-      onClick={onClick}
-      className={`px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 transition-all duration-300 text-slate-900 font-semibold ${className}`}
+      {...props}
+      className={`
+      px-5
+      py-3
+      rounded-xl
+      bg-amber-500
+      text-black
+      font-semibold
+      transition-all
+      duration-300
+      hover:bg-amber-400
+      hover:-translate-y-0.5
+      active:scale-95
+      ${className}
+      `}
     >
       {children}
     </button>

@@ -1,53 +1,64 @@
 import Button from "../ui/Button";
 import Container from "../ui/Container";
+import Badge from "../ui/Badge";
 
 const Hero = () => {
   return (
-    <section className="min-h-[calc(100vh-80px)] flex items-center">
+    <section className="min-h-[85vh] flex items-center">
 
       <Container>
 
-        <div className="max-w-4xl">
+        <Badge>
 
-          <p className="text-amber-400 font-semibold tracking-widest uppercase mb-4">
-            Crack Interviews • Crack Companies
-          </p>
+          🚀 Crack Interviews. Crack Companies.
 
-          <h1 className="text-5xl md:text-7xl font-black leading-tight">
+        </Badge>
 
-            From Beginner
+        <h1 className="mt-8 text-6xl lg:text-8xl font-black tracking-tight leading-none">
 
-            <br />
+          From Beginner
 
-            To
+          <br />
 
-            <span className="text-amber-400"> Offer Letter.</span>
+          To
 
-          </h1>
+          <span className="text-amber-500">
 
-          <p className="text-slate-400 text-lg mt-8 max-w-2xl leading-8">
+            {" "}Offer Letter.
 
-            Practice coding, master DSA, prepare Core Subjects,
-            compete in contests and track your complete placement
-            journey — all in one platform.
+          </span>
 
-          </p>
+        </h1>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-10">
+        <p className="mt-8 max-w-2xl text-lg text-slate-400 leading-8">
 
-            <Button>
+          CrackKar is your complete placement preparation platform.
 
-              Start Cracking 🚀
+          Practice DSA.
 
-            </Button>
+          Master Core Subjects.
 
-            <Button className="bg-slate-800 text-white hover:bg-slate-700">
+          Join contests.
 
-              Explore Problems
+          Track progress.
 
-            </Button>
+          Land your dream job.
 
-          </div>
+        </p>
+
+        <div className="flex flex-wrap gap-4 mt-10">
+
+          <Button>
+
+            Start Cracking →
+
+          </Button>
+
+          <Button className="bg-slate-800 text-white hover:bg-slate-700">
+
+            Explore Problems
+
+          </Button>
 
         </div>
 

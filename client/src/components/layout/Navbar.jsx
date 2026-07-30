@@ -1,29 +1,42 @@
+import Logo from "../ui/Logo";
 import Button from "../ui/Button";
 import Container from "../ui/Container";
 
 const Navbar = () => {
   return (
-    <nav className="w-full border-b border-slate-700">
+    <nav className="sticky top-0 z-50 border-b border-slate-800 bg-[#0B1220]/90 backdrop-blur-md">
 
       <Container>
 
-        <div className="h-20 flex items-center justify-between">
+        <div className="h-20 flex justify-between items-center">
 
-          <h1 className="text-2xl font-bold">
+          <Logo />
 
-            🍪 CrackKar
+          <div className="hidden lg:flex gap-10 text-slate-300">
 
-          </h1>
+            <a className="hover:text-white transition">
 
-          <div className="hidden md:flex items-center gap-8">
+              Problems
 
-            <a href="#">Problems</a>
+            </a>
 
-            <a href="#">Sheets</a>
+            <a className="hover:text-white transition">
 
-            <a href="#">Subjects</a>
+              Sheets
 
-            <a href="#">Contest</a>
+            </a>
+
+            <a className="hover:text-white transition">
+
+              Subjects
+
+            </a>
+
+            <a className="hover:text-white transition">
+
+              Contest
+
+            </a>
 
           </div>
 
